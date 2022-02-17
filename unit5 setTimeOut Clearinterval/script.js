@@ -30,3 +30,6 @@ function myAnimation() {
 }
 
 btn.addEventListener("click", () => requestAnimationFrame(myAnimation));
+//! остановка анимации
+let id = requestAnimationFrame(myAnimation);
+cancelAnimationFrame(id);
